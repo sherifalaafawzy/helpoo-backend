@@ -1,0 +1,16 @@
+services:
+    helpoo-app:
+      image: helpooappexpress
+      environment:
+        - NODE_ENV=production
+      build:
+        context: .
+        dockerfile: DockerFile.dev
+      volumes:
+        - ./:/srv/server
+      container_name: HelpooAppExpress
+      expose:
+        - "5000"
+      ports:
+        - "5000:5000"
+      command: npm start

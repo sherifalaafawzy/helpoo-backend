@@ -1,0 +1,12 @@
+node_modules
+public
+config/.env
+package-lock.json
+migrations
+Migrations
+config/config.json
+seeders
+models/index.js
+
+todo.js
+fixMigrateIssue.js

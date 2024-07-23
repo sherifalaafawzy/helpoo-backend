@@ -1,0 +1,5 @@
+FROM node:lts-alpine
+WORKDIR /srv/server
+COPY package*.json ./
+RUN npm install
+COPY . .
